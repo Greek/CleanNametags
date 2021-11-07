@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "cleannametags",
+  "version": "${version}",
+  "name": "CleanNametags",
+  "description": "Removes the background on Nametags and adds a text shadow.",
+  "authors": [
+    "greek"
+  ],
+  "contact": {
+    "website": "apap04.com"
+  },
+  "license": "MIT",
+  "icon": "assets/cleannametags/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.apap04.cleannametags.client.CleannametagsClient"
+    ],
+    "main": [
+      "com.apap04.cleannametags.Cleannametags"
+    ]
+  },
+  "mixins": [
+    "cleannametags.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.12.5",
+    "fabric": "*",
+    "minecraft": "1.17.1"
+  }
+}
